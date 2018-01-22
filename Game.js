@@ -6,7 +6,7 @@ import {
   ScrollView, 
   Platform, 
   Dimensions, 
-  Text 
+  Text,
 } from 'react-native'
 import Board from './Board';
 import ScoreCard from './ScoreCard';
@@ -15,7 +15,7 @@ import {
   resetRoll, 
   newGame, 
   rollDice, 
-  toggleKept 
+  toggleKept,
 } from './actions/mechanics';
 const deviceHeight = Dimensions.get('window').height;
 const deviceWidth = Dimensions.get('window').width;
@@ -89,34 +89,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(Game);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
